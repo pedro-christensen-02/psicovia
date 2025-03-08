@@ -105,7 +105,7 @@ section h3{
     margin: 0 auto;
 }
 .equipo img{
-    width: 90%;
+    width: 100%;
     height: 600px;
     border-radius: 5px;
 }
@@ -120,7 +120,7 @@ section h3{
         "area1 area3"
         "area2 area4";
     gap: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 .gridArea1 {
     grid-area: area1;
@@ -133,6 +133,13 @@ section h3{
 }
 .gridArea4 {
     grid-area: area4;
+}
+.descripcionEquipo{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
 }
 .sectionGridArea {
     background-color: hsl(294, 100%, 91%);
