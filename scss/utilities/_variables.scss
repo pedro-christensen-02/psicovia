@@ -1,0 +1,13 @@
+@mixin flex($display, $direction, $justify, ){
+   display: $display;
+   flex-direction: $direction;
+   justify-content: $justify;
+}
+$colores:(
+    fondo: hsl(292, 87%, 88%),
+    boton: #9743D9,
+    botonhover: #fd7bff,
+    footer: #423840,
+    titulos: #7427E2,
+    link: #CC5BD8,
+);

@@ -1,0 +1,42 @@
+.sectionGridArea {
+    background-color: map-get($colores, fondo );
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "area1 area2"
+        "area3 area4";
+    gap: 20px;
+}
+.gridArea1 {
+    grid-area: area1;
+}
+.gridArea2 {
+    grid-area: area2;
+}
+.gridArea3 {
+    grid-area: area3;
+}
+.gridArea4 {
+    grid-area: area4;
+}
+.subtitle{
+    @include flex(flex, row, center);
+    align-items: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+@media (max-width: 768px){
+    .sectionGridArea {
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
+        grid-template-areas: 
+            "area1"
+            "area2"
+            "area3"
+            "area4";
+    }
+    }

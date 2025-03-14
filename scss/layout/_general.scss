@@ -1,0 +1,101 @@
+header{
+    @include flex (flex, row, space-around);
+    align-items: center;
+    background-color: map-get($colores, fondo);
+}
+.busqueda{
+    color: black;
+    border-color: rgb(113, 0, 200);
+    background-color: map-get($colores, boton );
+    border-radius: 10px;
+}
+.imgConsul{
+    height: 190px;
+}
+nav ul{
+    font-weight: bold;
+    @include flex (flex, row, center);
+    list-style: none;
+}
+li{
+    margin: 0 20px;
+}
+a{
+    color: map-get($colores, link );
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+main{
+    background-color: map-get($colores, fondo);
+}
+.footer{
+    background-color: map-get($colores, footer);
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+}
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0% auto;
+    padding: 20px;
+}
+.footer-logo img{
+    width: 250px;
+}
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+.links ul li {
+    margin: 10px 0;
+}
+.links ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.links ul li a:hover {
+    text-decoration: underline;
+}
+.social a {
+    margin: 0 10px;
+}
+.social img {
+    width: 32px;
+    transition: transform 0.3s ease-in-out;
+}
+.social img:hover {
+    transform: scale(1.2);
+}
+.bottom {
+    background-color: #423840;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.ubicacion {
+    max-width: 300px;
+}
+@media (max-width: 768px){
+    header{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+     .footer-container {
+            flex-direction: column;
+            text-align: center;
+        }
+     .footer-logo img {
+            margin-bottom: 10px;
+        }
+    }
+
+

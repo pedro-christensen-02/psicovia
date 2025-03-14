@@ -1,0 +1,19 @@
+{
+  "name": "practicas-psicovia",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedro-christensen-02/coder-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedro-christensen-02/coder-web/issues"
+  },
+  "homepage": "https://github.com/pedro-christensen-02/coder-web#readme",
+  "description": ""
+}
