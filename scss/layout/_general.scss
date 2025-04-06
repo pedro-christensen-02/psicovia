@@ -2,6 +2,7 @@ header{
     @include flex (flex, row, space-around);
     align-items: center;
     background-color: map-get($colores, fondo);
+    
 }
 .busqueda{
     color: black;
@@ -9,14 +10,32 @@ header{
     background-color: map-get($colores, boton );
     border-radius: 10px;
 }
-.imgConsul{
-    height: 190px;
-}
 nav ul{
     font-weight: bold;
     @include flex (flex, row, center);
     list-style: none;
 }
+.logo {
+    transition: all 0.3s ease;
+  }
+  
+  .logo.shrink {
+    width: 8%;
+    opacity: 0.7;
+  }
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: hsl(292, 87%, 88%);
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .navbar.scrolled {
+    background-color: hsla(292, 87%, 88%, 0.8); 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);  
+  }
 li{
     margin: 0 20px;
 }
@@ -30,6 +49,7 @@ a:hover{
 
 main{
     background-color: map-get($colores, fondo);
+    padding-top: 250px;
 }
 .footer{
     background-color: map-get($colores, footer);
@@ -86,6 +106,9 @@ main{
     header{
         flex-direction: column;
     }
+    main{
+        padding-top: 150px;
+    }
     nav ul{
         flex-direction: column;
     }
@@ -97,5 +120,6 @@ main{
             margin-bottom: 10px;
         }
     }
+    
 
 

@@ -5,6 +5,9 @@ div h2{
     display: flex;
     justify-content: center;
 }
+.imgConsul{
+    height: 190px;
+}
 .servicios{
     @include flex(flex, row, space-around);
     flex-wrap: wrap;
@@ -45,3 +48,4 @@ article{
    justify-content: center;
  }
 }
+

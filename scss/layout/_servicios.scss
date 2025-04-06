@@ -2,12 +2,16 @@
     background-color: map-get($colores, fondo );
     padding: 0 5%;
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas: 
         "area1 area2"
-        "area3 area4";
+        "area3 area4"
+        "area5 area6"
+        "area7 area8";
     gap: 20px;
+
 }
 .gridArea1 {
     grid-area: area1;
@@ -21,6 +25,19 @@
 .gridArea4 {
     grid-area: area4;
 }
+.gridArea5 {
+    grid-area: area5;
+}
+.gridArea6 {
+    grid-area: area6;
+}
+.gridArea7 {
+    grid-area: area7;
+}
+.gridArea8 {
+    grid-area: area8;
+}
+
 .subtitle{
     @include flex(flex, row, center);
     align-items: center;
@@ -36,7 +53,11 @@
         grid-template-areas: 
             "area1"
             "area2"
+            "area4"
             "area3"
-            "area4";
+            "area5"
+            "area6"
+            "area8"
+            "area7";
     }
     }

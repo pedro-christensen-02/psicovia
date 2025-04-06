@@ -1,14 +1,59 @@
-.banner img{
+
+.formulario-turno {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgb(241, 179, 255);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  .turnoSombra {
+    background-color: map-get($colores ,fondo );
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8); 
+  }
+  .formulario-turno h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-decoration: underline;
+  }
+  
+  .campo {
+    margin-bottom: 15px;
+  }
+  
+  .campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .campo input,
+  .campo textarea {
     width: 100%;
-}
-.botonTurno {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    background-color: map-get($colores, boton );
-    color: rgb(0, 0, 0); 
-    border-radius: 10px; 
-}
-.botonTurno:hover{
-    background-color: map-get($colores, botonhover );
-}
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .buttonTurno {
+    margin: 20px auto 0 auto;
+    padding: 10px;
+    background-color: map-get($colores, boton);
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+  }
+  
+  
+  .buttonTurno:hover {
+    background-color: map-get($colores, botonhover);
+  }
+  

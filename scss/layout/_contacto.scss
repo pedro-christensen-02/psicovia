@@ -1,13 +1,84 @@
-.contacto{
-    display: flex;
-    align-items: flex-start; 
-    justify-content: center; 
-    width: 75%; 
-    gap: 25px; 
-    margin: 0 auto; 
-    flex-wrap: nowrap;
-}
-.carouselContacto{
-    width: 75%; 
+
+.contacto {
+    max-width: 500px;
     margin: 0 auto;
-}
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgb(241, 179, 255);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  .contactoSombra {
+    background-color: map-get($colores ,fondo );
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8); 
+  }
+  .contacto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
+  
+  .contacto form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contacto label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .contacto input,
+  .contacto textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  .button-center{
+    text-align: center;
+  }
+  .contacto button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: map-get($colores, boton);
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+  }
+  
+  .contacto button:hover {
+    background-color: map-get($colores, botonhover );
+  }
+  .redes-contacto {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .redes-contacto p {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .redes-contacto a {
+    display: inline-block;
+    margin: 5px 10px;
+    text-decoration: none;
+    color: map-get($colores, link );
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .redes-contacto a:hover {
+    color: map-get($colores, botonhover );
+    text-decoration: underline;
+    
+  }
+  
+  
