@@ -33,7 +33,6 @@ nav ul {
 .navbar {
   position: fixed;
   top: 0;
-  width: 100%;
   background-color: hsl(292, 87%, 88%);
   z-index: 1000;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
