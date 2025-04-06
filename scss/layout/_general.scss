@@ -102,10 +102,12 @@ main{
 .ubicacion {
     max-width: 300px;
 }
+.ubi{
+    font-size: small;
+}
 @media (max-width: 768px){
     header{
         flex-direction: column;
-       
     }
     main{
         padding-top: 150px;

@@ -125,6 +125,10 @@ main {
   max-width: 300px;
 }
 
+.ubi {
+  font-size: small;
+}
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -208,7 +212,7 @@ article {
     justify-content: center;
   }
 }
-.sectionGridArea {
+.sectionGridAreaServicio {
   background-color: hsl(292, 87%, 88%);
   padding: 0 5%;
   display: grid;
@@ -262,10 +266,10 @@ article {
 }
 
 @media (max-width: 768px) {
-  .sectionGridArea {
+  .sectionGridAreaServicio {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
     grid-template-areas: "area1" "area2" "area4" "area3" "area5" "area6" "area8" "area7";
   }
 }

@@ -1,6 +1,6 @@
 
   
-.sectionGridArea {
+.sectionGridAreaServicio {
     background-color: map-get($colores, fondo );
     padding: 0 5%;
     display: grid;
@@ -48,10 +48,10 @@
     text-decoration: underline;
 }
 @media (max-width: 768px){
-    .sectionGridArea {
+    .sectionGridAreaServicio {
         display: grid;
         grid-template-columns: 1fr; 
-        grid-template-rows: auto; 
+        grid-template-rows: 1fr; 
         grid-template-areas: 
             "area1"
             "area2"
