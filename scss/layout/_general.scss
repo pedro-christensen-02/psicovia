@@ -4,6 +4,9 @@ header{
     background-color: map-get($colores, fondo);
     
 }
+body{
+    background-color: map-get($colores, fondo );
+}
 .busqueda{
     color: black;
     border-color: rgb(113, 0, 200);
@@ -115,11 +118,11 @@ main{
     nav ul{
         flex-direction: column;
     }
-     .footer-container {
+    .footer-container {
             flex-direction: column;
             text-align: center;
         }
-     .footer-logo img {
+    .footer-logo img {
             margin-bottom: 10px;
         }
     }

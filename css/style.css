@@ -6,6 +6,10 @@ header {
   background-color: hsl(292, 87%, 88%);
 }
 
+body {
+  background-color: hsl(292, 87%, 88%);
+}
+
 .busqueda {
   color: black;
   border-color: rgb(113, 0, 200);
