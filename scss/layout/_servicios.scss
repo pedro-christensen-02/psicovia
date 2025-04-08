@@ -39,7 +39,6 @@
 .gridArea8 {
     grid-area: area8;
 }
-
 .subtitle{
     @include flex(flex, row, center);
     align-items: center;
